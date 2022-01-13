@@ -25,7 +25,7 @@ html {
 
 body {
     background-color: #0D2C43;
-    margin: 3rem 2rem;
+    margin: 2rem 2rem 3rem;
 }
 
 h1 {
@@ -72,7 +72,7 @@ h5 {
 
 img {
     margin: 0;
-    width: 93%;
+    width: 89%;
 }
 
 main {
@@ -148,13 +148,31 @@ img.logo {
     width:160px;
     margin: 2rem 0 .9rem;
 }
+ /*Image expands*/
+
+ .description>a>img {
+    transition: all .3s ease-in-out;
+   }
+
+   .description>a>img:hover {
+   transform: scale(1.05);
+   filter:saturate(1.35);
+}
+
+/*email links*/
+
+ .text>h5:hover {
+     text-decoration: underline;
+     cursor: pointer;
+     color: #D99D90;
+ }
 
 @media (min-width: 240px) {
     #parker_description, #allie_description {
         position: static;
     }
 }
-@media (max-width: 730px) {
+@media (max-width: 697px) {
 
     img.logo {
         width: 320px;
@@ -162,7 +180,7 @@ img.logo {
     }
     
     .footer{
-        margin-top: 1.5rem;
+        margin: 2rem 0;
     }
 
     .lets_talk{
@@ -170,7 +188,7 @@ img.logo {
     }
 }
 
-@media (min-width: 730px) {
+@media (min-width: 698px) {
     #parker_description, #allie_description {
         position: relative;
         top: 50px;
